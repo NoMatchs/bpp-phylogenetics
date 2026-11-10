@@ -1,0 +1,13 @@
+input.sequence.file = real_alignment.fasta
+input.sequence.format = Fasta
+input.sequence.alphabet = DNA
+
+model = GTR
+rate_distribution = Gamma(n=4, alpha=0.5)
+
+init.tree = random
+optimization.topology = yes
+optimization.brlen = yes
+
+output.tree.file = ml_real_output.tree
+output.tree.format = Newick
